@@ -94,6 +94,77 @@
     </div>
 </div>
 
+<!-- SpellBrush Section -->
+<div class="container">
+    <header class="major">
+        <h2>SpellBrush</h2>
+        <p>A drawing roguelike prototype built in Unity.</p>
+    </header>
+
+    <div class="row gtr-150">
+        <div class="col-4 col-12-medium">
+            <section>
+                <h3>Core Concept</h3>
+                <p>
+                    <strong>SpellBrush</strong> is a survivor-like prototype where 
+                    players draw and animate their own spells, then use them to fight hordes of enemies. The colors 
+                    you paint determine how the spell behaves and what elemental 
+                    effects it gains.
+                </p>
+                <ul>
+                    <li>Multi-frame animated spell drawing</li>
+                    <li>The colors you draw with result in elemental effects</li>
+                    <li>Projectile, AOE, Turret, Orbiter, and Summon archetypes</li>
+                    <li>Component-based spell behavior system</li>
+                </ul>
+            </section>
+
+            <hr />
+
+            <section>
+                <h3>Element System</h3>
+                <p>
+                    Spell color determines its element and combat bonuses:
+                </p>
+                <ul>
+                    <li><span style="color:#ff4d4d;">Red</span> – +10% damage</li>
+                    <li><span style="color:#4dc3ff;">Blue</span> – Slows enemies</li>
+                    <li><span style="color:#ffd84d;">Yellow</span> – Damage over time</li>
+                    <li><span style="color:#4dff88;">Green</span> – Chance to heal on cast</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="col-8 col-12-medium imp-medium">
+            <section>
+                <h3>Play on Itch.io!</h3>
+<iframe frameborder="0" src="https://itch.io/embed/4332788" width="552" height="167"><a href="https://shalimman.itch.io/spellbrush">SpellBrush by shalimman</a></iframe>            </section>
+        </div>
+
+        <div class="col-8 col-12-medium imp-medium">
+            <section>
+                <h3>Technical Highlights</h3>
+                <ul>
+                    <li>Custom pixel-buffer drawing system (Texture2D + Color32 arrays)</li>
+                    <li>Undo/Redo stack + onion skin animation preview</li>
+                    <li>Runtime spell blueprint and runtime conversion</li>
+                    <li>EventBus-driven combat and UI systems</li>
+                    <li>Cinemachine camera + boss encounters</li>
+                </ul>
+
+                <p>
+                    The system is fully modular: spells are defined by a 
+                    <em>SpellBlueprint</em> and executed using composable 
+                    behavior components, allowing rapid experimentation 
+                    with new mechanics.
+                </p>
+            </section>
+        </div>
+
+        
+    </div>
+</div>
+
 
 <!-- Footer -->
 <footer id="footer">
